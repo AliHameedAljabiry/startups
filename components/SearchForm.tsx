@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from 'next/form';
+// import Form from 'next/form';
 import SearchFormReset from './SearchFormReset';
 import {Search} from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,7 +11,7 @@ interface SearchFormProps {
 
 const SearchForm: React.FC<SearchFormProps> = ({ query }) => {
   return (
-    <Form action="/" scroll={false} className="search-form">
+    <form action="/" scroll={false} className="search-form">
       <input
         type="text"
         defaultValue={query}
@@ -27,7 +27,7 @@ const SearchForm: React.FC<SearchFormProps> = ({ query }) => {
           <span className="sr-only">Search</span>
         </Button>
       </div>
-    </Form>
+    </form>
   );
 };
 

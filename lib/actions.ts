@@ -38,7 +38,7 @@ export const createStartupPitch = async (state: unknown, form: FormData, pitch: 
       category,
       image: link,
       slug: {
-        _type: slug,
+        _type: "slug",
         current: slug,
       },
       author: {
